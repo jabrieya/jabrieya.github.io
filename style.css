@@ -39,12 +39,20 @@ main {
   align-items: center;
   gap: 12px;
   font-size: 14px;
+  width: 110px;
 }
 
 .desktop-icon img {
   width: 72px;
   height: 72px;
   object-fit: contain;
+}
+
+.desktop-icon span {
+  display: block;
+  min-height: 34px;
+  line-height: 17px;
+  text-align: center;
 }
 
 .desktop-icon:hover {
