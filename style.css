@@ -23,12 +23,11 @@ main {
 }
 
 .icon-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 42px;
-  max-width: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 56px;
   margin: 0 auto;
-  align-items: start;
 }
 
 .desktop-icon {
