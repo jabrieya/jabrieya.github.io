@@ -204,13 +204,14 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 72px;
-  max-width: 760px;
+  max-width: 680px;
   margin: 0 auto;
 }
 
 .experience-column {
   font-size: 14px;
   line-height: 1.7;
+  text-align: center;
 }
 
 .column-title {
