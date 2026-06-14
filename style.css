@@ -76,3 +76,48 @@ main {
     font-size: 12px;
   }
 }
+
+.page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-link {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+}
+
+.page-icon {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 32px;
+}
+
+.note-list {
+  text-align: center;
+  font-size: 14px;
+}
+
+.note-list p {
+  margin-bottom: 16px;
+}
+
+.note-list ul {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+.note-list li {
+  margin-bottom: 8px;
+}
