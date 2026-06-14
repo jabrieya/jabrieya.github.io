@@ -131,3 +131,33 @@ main {
     line-height: 16px;
   }
 }
+
+
+.progress-area {
+  margin-top: 32px;
+  width: 220px;
+}
+
+.progress-label {
+  margin: 0 0 10px 0;
+  font-size: 13px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  border: 1.5px solid #111;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 25%;
+  height: 100%;
+  background: #111;
+}
+
+.progress-percent {
+  margin-top: 10px;
+  font-size: 13px;
+}
