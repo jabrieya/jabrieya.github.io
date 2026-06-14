@@ -132,6 +132,7 @@ main {
   }
 }
 
+/* progress area */
 
 .progress-area {
   margin-top: 32px;
@@ -160,4 +161,19 @@ main {
 .progress-percent {
   margin-top: 10px;
   font-size: 13px;
+}
+
+/* experience */
+
+.experience-link {
+  display: block;
+  margin-top: 48px;
+  text-align: center;
+  color: #111;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.experience-link:hover {
+  text-decoration: underline;
 }
