@@ -135,21 +135,23 @@ main {
 /* progress area */
 
 .progress-area {
-  margin-top: 32px;
-  width: 220px;
+  margin: 32px auto 0 auto;
+  width: 260px;
+  text-align: center;
 }
 
 .progress-label {
-  margin: 0 0 10px 0;
-  font-size: 13px;
+  margin: 0 0 14px 0;
+  font-size: 14px;
 }
 
 .progress-bar {
   width: 100%;
-  height: 10px;
+  height: 12px;
   border: 1.5px solid #111;
   border-radius: 999px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .progress-fill {
@@ -159,8 +161,9 @@ main {
 }
 
 .progress-percent {
-  margin-top: 10px;
-  font-size: 13px;
+  margin: 8px 0 0 0;
+  font-size: 14px;
+  text-align: center;
 }
 
 /* experience */
