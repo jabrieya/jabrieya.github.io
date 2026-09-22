@@ -131,7 +131,16 @@ body {
   width: 100%;
   max-width: 680px;
   margin: 0 auto;
-  padding: 90px 24px 100px 24px;
+  padding: 90px 24px 120px 24px;
+}
+
+.post-page .back-link {
+  position: fixed;
+  top: 28px;
+  left: 28px;
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
 }
 
 .blog-post {
@@ -141,18 +150,23 @@ body {
 }
 
 .blog-post .post-date {
-  margin: 0 0 24px 0;
+  margin: 0 0 28px 0;
   font-size: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .blog-post h1 {
-  margin: 0 0 32px 0;
+  margin: 0 0 40px 0;
   font-size: 34px;
   line-height: 1.25;
+  font-weight: 700;
 }
 
 .blog-post p {
-  margin: 0 0 24px 0;
+  margin: 0 0 26px 0;
+}
+
+.blog-post p:not(.post-date) {
+  max-width: 620px;
 }
