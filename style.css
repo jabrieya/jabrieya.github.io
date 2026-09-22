@@ -123,3 +123,36 @@ body {
     font-size: 15px;
   }
 }
+
+
+/* individual blog post page */
+
+.post-page {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 90px 24px 100px 24px;
+}
+
+.blog-post {
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.blog-post .post-date {
+  margin: 0 0 24px 0;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.blog-post h1 {
+  margin: 0 0 32px 0;
+  font-size: 34px;
+  line-height: 1.25;
+}
+
+.blog-post p {
+  margin: 0 0 24px 0;
+}
