@@ -34,14 +34,14 @@ body {
 
 .blog-home {
   width: 100%;
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 48px 24px 90px 24px;
+  padding: 48px 24px 100px 24px;
   text-align: center;
 }
 
 .site-header {
-  margin-bottom: 64px;
+  margin-bottom: 72px;
 }
 
 .site-logo {
@@ -49,7 +49,7 @@ body {
   max-width: 520px;
   height: auto;
   display: block;
-  margin: 0 auto 24px auto;
+  margin: 0 auto 28px auto;
 }
 
 .site-description {
@@ -60,44 +60,42 @@ body {
 }
 
 .posts {
-  display: flex;
-  flex-direction: column;
-  gap: 64px;
+  width: 100%;
 }
 
-.post-preview {
+/* full post */
+
+.full-post {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.full-post .post-date {
   text-align: center;
-}
-
-.post-date {
-  margin: 0 0 14px 0;
   font-size: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  margin: 0 0 24px 0;
 }
 
-.post-preview h2 {
-  margin: 0 0 16px 0;
-  font-size: 30px;
-  line-height: 1.2;
+.full-post h2 {
+  text-align: center;
+  font-size: 34px;
+  line-height: 1.25;
+  margin: 0 0 36px 0;
   font-weight: 700;
 }
 
-.post-excerpt {
-  margin: 0 auto 18px auto;
-  max-width: 520px;
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-.read-more {
-  color: #111;
-  text-decoration: underline;
+.full-post p {
+  max-width: 620px;
+  margin: 0 auto 24px auto;
   font-size: 15px;
+  line-height: 1.9;
+  text-align: left;
 }
 
-.read-more:hover {
-  opacity: 0.7;
+.full-post p:first-child {
+  text-align: center;
 }
 
 /* mobile */
@@ -112,61 +110,19 @@ body {
   }
 
   .site-header {
-    margin-bottom: 52px;
+    margin-bottom: 56px;
   }
 
-  .post-preview h2 {
+  .site-description {
+    font-size: 13px;
+  }
+
+  .full-post h2 {
     font-size: 26px;
   }
 
-  .post-excerpt {
-    font-size: 15px;
+  .full-post p {
+    font-size: 14px;
+    line-height: 1.8;
   }
-}
-
-
-/* individual blog post page */
-
-.post-page {
-  width: 100%;
-  max-width: 680px;
-  margin: 0 auto;
-  padding: 90px 24px 120px 24px;
-}
-
-.post-page .back-link {
-  position: fixed;
-  top: 28px;
-  left: 28px;
-  color: #111;
-  text-decoration: none;
-  font-size: 13px;
-}
-
-.blog-post {
-  text-align: left;
-  font-size: 15px;
-  line-height: 1.9;
-}
-
-.blog-post .post-date {
-  margin: 0 0 28px 0;
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.blog-post h1 {
-  margin: 0 0 40px 0;
-  font-size: 34px;
-  line-height: 1.25;
-  font-weight: 700;
-}
-
-.blog-post p {
-  margin: 0 0 26px 0;
-}
-
-.blog-post p:not(.post-date) {
-  max-width: 620px;
 }
