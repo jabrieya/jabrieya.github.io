@@ -1,44 +1,214 @@
 
-<section class="blog-posts">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jabrieya | Personal Blog</title>
 
-  <article class="blog-post">
-    <img src="images/kyoto.png" alt="" class="post-icon">
+  <style>
+    /* General page styling */
+    * {
+      box-sizing: border-box;
+    }
 
-    <div class="post-content">
-      <span class="post-category">LIFE IN JAPAN</span>
-      <h2>A New Chapter in Kyoto</h2>
-      <p>Moving to a new city, starting university, and finding my way.</p>
-      <a href="posts/kyoto.html" class="read-more">
-        Read More <span aria-hidden="true">→</span>
-      </a>
-    </div>
-  </article>
+    body {
+      margin: 0;
+      background: #fff;
+      color: #222;
+      font-family: Arial, sans-serif;
+    }
 
-  <article class="blog-post">
-    <img src="images/journal.png" alt="" class="post-icon">
+    /* Blog post section */
+    .blog-posts {
+      width: 100%;
+      max-width: 850px;
+      margin: 60px auto;
+      padding: 0 24px;
+    }
 
-    <div class="post-content">
-      <span class="post-category">PERSONAL JOURNAL</span>
-      <h2>Little Things Lately</h2>
-      <p>Coffee shops, quiet mornings, and everyday thoughts.</p>
-      <a href="posts/journal.html" class="read-more">
-        Read More <span aria-hidden="true">→</span>
-      </a>
-    </div>
-  </article>
+    /* Individual post */
+    .blog-post {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding: 30px 0;
+      border-bottom: 1px solid #e8e8e8;
+    }
 
-  <article class="blog-post">
-    <img src="images/school.png" alt="" class="post-icon">
+    /* Post icons */
+    .post-icon {
+      width: 110px;
+      height: 110px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
 
-    <div class="post-content">
-      <span class="post-category">UNIVERSITY</span>
-      <h2>Back to School Diaries</h2>
-      <p>A fresh start, new notebooks, and everything in between.</p>
-      <a href="posts/university.html" class="read-more">
-        Read More <span aria-hidden="true">→</span>
-      </a>
-    </div>
-  </article>
+    /* Text content */
+    .post-content {
+      flex: 1;
+      min-width: 0;
+    }
 
-</section>
+    .post-category {
+      display: block;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #999;
+      margin-bottom: 10px;
+    }
+
+    .post-content h2 {
+      font-size: 23px;
+      font-weight: 600;
+      margin: 0 0 10px;
+    }
+
+    .post-content p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #777;
+      margin: 0 0 14px;
+    }
+
+    /* Read more link */
+    .read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #333;
+      text-decoration: none;
+      transition: gap 0.2s ease;
+    }
+
+    .read-more:hover {
+      gap: 15px;
+    }
+
+    /* Footer banner */
+    .site-footer {
+      width: 100%;
+      margin-top: 80px;
+      background: #000;
+    }
+
+    .footer-banner {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .blog-posts {
+        margin: 30px auto;
+        padding: 0 18px;
+      }
+
+      .blog-post {
+        gap: 16px;
+        padding: 24px 0;
+      }
+
+      .post-icon {
+        width: 75px;
+        height: 75px;
+      }
+
+      .post-content h2 {
+        font-size: 18px;
+      }
+
+      .post-content p {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <section class="blog-posts">
+
+      <!-- POST 1 -->
+      <article class="blog-post">
+        <img
+          src="images/kyoto.png"
+          alt=""
+          class="post-icon"
+        >
+
+        <div class="post-content">
+          <span class="post-category">LIFE IN JAPAN</span>
+          <h2>A New Chapter in Kyoto</h2>
+          <p>
+            Moving to a new city, starting university,
+            and finding my way.
+          </p>
+          <a href="posts/kyoto.html" class="read-more">
+            Read More <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- POST 2 -->
+      <article class="blog-post">
+        <img
+          src="images/journal.png"
+          alt=""
+          class="post-icon"
+        >
+
+        <div class="post-content">
+          <span class="post-category">PERSONAL JOURNAL</span>
+          <h2>Little Things Lately</h2>
+          <p>
+            Coffee shops, quiet mornings,
+            and everyday thoughts.
+          </p>
+          <a href="posts/journal.html" class="read-more">
+            Read More <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- POST 3 -->
+      <article class="blog-post">
+        <img
+          src="images/school.png"
+          alt=""
+          class="post-icon"
+        >
+
+        <div class="post-content">
+          <span class="post-category">UNIVERSITY</span>
+          <h2>Back to School Diaries</h2>
+          <p>
+            A fresh start, new notebooks,
+            and everything in between.
+          </p>
+          <a href="posts/university.html" class="read-more">
+            Read More <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- SIGNATURE FOOTER -->
+  <footer class="site-footer">
+    <img
+      src="jabrieya-title.png"
+      alt="Jabrieya"
+      class="footer-banner"
+    >
+  </footer>
+
+</body>
+</html>
+
 
